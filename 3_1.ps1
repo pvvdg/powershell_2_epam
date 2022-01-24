@@ -1,5 +1,5 @@
 
-# 1.	������� �㬬� ���� 䠩��� log � txt �� ��᪥ �: (��易⥫쭮 横��� foreach, � gci �� 䨫��஢���)
+# 1.	Посчитать сумму длин файлов log и txt на диске С: (обязательно циклом foreach, в gci не фильтровать)
 $FilesLength = Get-ChildItem -Force -Path C:\Task\* -Include "*.txt", "*.log" | Select-Object -Expand Length
 
 $Sum = 0
