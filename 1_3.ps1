@@ -6,7 +6,7 @@
 [int]$k = Read-Host "Enter k"
 
 while ($k -eq $m * $n) {
-    $k = Read-Host "Enter k not equal n*m"
+    [int]$k = Read-Host "Enter k not equal n*m"
 }
 
 #for ps 7
