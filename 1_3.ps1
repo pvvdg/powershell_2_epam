@@ -9,4 +9,13 @@ while ($k -eq $m * $n) {
     $k = Read-Host "Enter k not equal n*m"
 }
 
-($k % $n -eq 0) -or ($k % $m -eq 0) -and ($k -lt $n * $k) ? "Yes" : "No"
+#for ps 7
+#($k % $n -eq 0) -or ($k % $m -eq 0) -and ($k -lt $n * $k) ? "Yes" : "No"
+
+if (($k % $n -eq 0) -or ($k % $m -eq 0) -and ($k -lt $n * $k)) {
+    "Yes"
+}
+else {
+    "No"
+}
+

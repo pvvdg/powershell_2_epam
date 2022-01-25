@@ -4,10 +4,10 @@
 [int]$n = Read-Host "Enter n"
 [int]$m = Read-Host "Enter m"
 
-[int]$sum = 0
+$sum = 0
 
 do {
-    if ($m -lt $n ) {
+    if ($m -le $n ) {
         [int]$m = Read-Host "Enter m greater than n"
     }
     else {
@@ -15,7 +15,7 @@ do {
     }
 } while ($true)
 
-for ($i = $n; $i -lt $m; $i++) {
+for ($i = $n; $i -le $m; $i++) {
     $sum += $i
 }
 
